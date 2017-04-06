@@ -24,6 +24,15 @@
         background-color: lightgray;
       }
       
+      #ShopNow {
+        background-color: lightgray;
+        padding: 10px;        
+      }
+      
+      #Black {
+        color: white;
+      }
+      
       @media screen and (max-width: 540px) {
         #Header {
           padding: 10px;
@@ -34,6 +43,11 @@
         #Content {
           width: 100%; height: calc(100% - 90px);
           margin-top: 90px;
+        }
+        
+        #Black {
+          width: 200px;
+          margin-top: 10px;
         }
       }
       
@@ -49,6 +63,12 @@
           position: absolute;
           left: 50%;
           font-size: 24px;
+        }
+        
+        #Black {
+          position: absolute;
+          width: 200px;
+          top: 70%; left: calc(25% - 100px);
         }
       }
     </style>
@@ -67,5 +87,10 @@
         <strike>$40</strike>&nbsp;$13
       </div>
     </div>
+    
+    <div id="Black">Black Friday</div>
+    <div id="ShopNow">Show Now</div>
+    
+    FUCK YOU
   </body>
 </html>

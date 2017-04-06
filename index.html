@@ -6,7 +6,7 @@
     
     <style>
       body {
-        font-family: "Segoe UI";
+        font-family: "Segoe UI", sans-serif;
       }
       
       #Header {
@@ -16,11 +16,24 @@
         position: fixed;
       }
       
+      .product {
+        padding: 10px;
+      }
+      
+      .product:hover {
+        background-color: lightgray;
+      }
+      
       @media screen and (max-width: 540px) {
         #Header {
           padding: 10px;
           width: calc(100% - 20px);
           font-size: 50px;
+        }
+        
+        #Content {
+          width: 100%; height: calc(100% - 90px);
+          margin-top: 90px;
         }
       }
       
@@ -30,11 +43,27 @@
           width: 50%; height: 60%;
           font-size: 96px;
         }
+        
+        #Content {
+          width: 50%; height: 100%;
+          font-size: 24px;
+        }
       }
     </style>
   </head>
   
   <body>
     <div id="Header">Google</div>
+    <div id="Content">
+      <div class="product">
+        Google Docs Pro<br>
+        <strike>$40</strike>&nbsp;$13
+      </div>
+      
+      <div class="product">
+        Google Slides Pro<br>
+        <strike>$40</strike>&nbsp;$13
+      </div>
+    </div>
   </body>
 </html>

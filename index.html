@@ -1,71 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Hi Theodore </title>
-        <meta charset="utf-8"/>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
-        
-        @font-face {
-    font-family: myFirstFont;
-    src: url("/Dancing Script.ttf");
-}
-        
-        body {
-            background-color: white;
-            color: green;
-            font-family: myFirstFont, Arial;
-            }
-            
-        
-        .PageHeader{
-              background-color: black;
-         color: white;
-        position: fixed;
+      
+      
+      #Header {
+        background-color: black;
+        text-align: center;
         left: 0; top: 0;
-        width: 100%;
-        padding: 10px;
-        font-size: 45px;
-        text-align: center;
+        position: fixed;
+      }
+      
+      @media screen and (max-width: 540px) {
+        #Header {
+          padding: 10px;
+          width: calc(100% - 20px);
+          font-size: 50px;
         }
-        
-        .PageMiddle{
-        background-color: brown;
-        color:lemonchiffon;
-        left: 10; top: 50;
-        width: 35%;
-        padding: 20px;
-        font-size: 24px;
-        height: 385px;
-        text-align: center;
+      }
+      
+      @media screen and (min-width: 541px) {
+        #Header {
+          padding-top: 40%;
+          width: 50%; height: 60%;
+          font-size: 96px;
         }
-        
-    
+      }
     </style>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-
-    <body>
-        <div class="PageHeader">
-        Teach me pls
-        </div>
-    <div style="margin-top: 150px;">
-
-    
-    
-    <div class="PageMiddle">
-    <h3>   </h3>
-    <p> How to use font face </p>
-    Enjoy!
-
-    
-
-    <p> THXX </p>
-    <p> ~Fluffy Samuel </p>
-    
-   </div>
-
-   
-   
-
-   </body>
-   </html>
+  </head>
+  
+  <body>
+    <div id="Header">Google</div>
+  </body>
+</html>
